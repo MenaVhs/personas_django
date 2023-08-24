@@ -1,0 +1,15 @@
+para correr el servidor
+python .\manage.py runserver
+
+                   crearApp nombreApp
+python .\manage.py startapp webapp
+
+archivo __init__ no debe cambiar, para indicar que es un paquete de Python
+archivo views.py se agrega el código para el navegador web
+Registrar la app: capeta sap>settings.py
+    en installed_apps, se agregan las aplicaciones web, en este caso webapp
+
+archivo urls.py: mapeo de urls, ahí se agregan las rutas a las que se puede acceder desde la webapp.
+se debe agregar en el archivo de views.py dentro de la carpteta de la app (webserver)
+
+OJO! Indicar la ruta del código fuente, con Mark Directory as > Sources Root
