@@ -2,7 +2,7 @@
 para correr el servidor<br>
 python .\manage.py runserver<br>
 
------------------- crearApp nombreApp
+------------------ crearApp nombreApp <br>
 python .\manage.py startapp webapp <br>
 
 archivo __init__ no debe cambiar, para indicar que es un paquete de Python
@@ -32,3 +32,16 @@ OJO! Indicar la ruta del código fuente, con Mark Directory as > Sources Root <b
    ```
    4. Instalar conector hacia PostgreSQL <br>
    ```python -m pip install psycopg2```
+
+### Migraciones
+En el archivo de setting.py, ya hay aplicaciones instaladas como app de admin,
+estas aplicaciones se configurar en la BD. 
+
+si se corre el servidor, puede mandar el siguiente mensaje
+"You have 18 unapplied migration(s)." <br>
+
+correr: ```python manage.py showmigrations```
+
+### sincronización con la BD
+````python .\manage.py migrate
+````
