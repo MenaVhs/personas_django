@@ -1,5 +1,5 @@
 # Notas personales
-Patrón (Model View Template) MVT
+Patrón Model View Template (MVT)
 
 ![img.png](img.png)
 
@@ -15,7 +15,7 @@ Registrar la app: capeta sap>settings.py<br>
     en installed_apps, se agregan las aplicaciones web, en este caso webapp <br>
 
 archivo urls.py: mapeo de urls, ahí se agregan las rutas a las que se puede acceder desde la webapp.
-se debe agregar en el archivo de views.py dentro de la carpteta de la app (webserver)
+se debe agregar en el archivo de ```views.py``` dentro de la carpteta de la app (webserver)
 
 OJO! Indicar la ruta del código fuente, con Mark Directory as > Sources Root <br>
 
